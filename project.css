@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+.header{
+    min-height: 100vh;
+    width:100%;
+    background-image:url("image/image.jpg");
+    background-position:center;
+    background-size:cover;
+    position:relative;
+
+
+}
+nav{
+    display:flex;
+    padding: 3% 5%;
+    justify-content:space-between;
+    align-items:center;
+}
+nav h3{
+    color: white;
+    font-size: 20px;
+    text-transform:uppercase;
+    font-style: italic;
+}
+nav h3:hover{
+    background-color: rgb(62, 66, 66);
+    animation: alternate;
+}
+.nav-menu{
+    flex: 1;
+    text-align:right;
+}
+.nav-menu ul li{
+    list-style: none;
+    display: inline-block;
+    margin:0px 12px;
+    position:relative;
+}
+.nav-menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.nav-menu ul li:hover{
+    background-color: blue;
+    transition:1s;
+   
+}
+.profile-image{
+    width: 19%;
+    position: absolute;
+    top:14%;
+    left: 70%;
+    transform: translate(20% -35%);
+    border-radius: 50%;
+}
+.tytle-driction{
+    width: 90%;
+    color: white;
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+   
+}
+.tytle-driction h1{
+    font-size: 50px;
+
+}
+.tytle-driction p{
+    margin: 10px 0 40px;
+    font-size: 15px;
+}
+.tytle-driction a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border:2px solid white;
+    position: relative;
+    cursor: pointer;
+    padding: 13px 30px;
+    font: size 14px;
+
+}
+.tytle-driction a:hover{
+    background-color:green;
+    border: 2px solid black;
+    transition: 1s;
+}
+nav span{
+    display: none;
+}
+@media(max-width:700px){
+    .tytle-driction{
+        width: 90%;
+        color: white;
+        position:absolute;
+        top:50%;
+        left: 50%;
+        transform:translate(-50%,-50%);
+        text-align: center;
+    }
+
+    .tytle-driction h1{
+        font-size: 25px;
+    }
+    nav span{
+        display: block;
+        color:white;
+        margin: 10px;
+        font-size: 25px;
+        cursor:pointer;
+    }
+    .nav-menu{
+        position: absolute;
+        background:rgba(101, 62, 62, 0.2);
+        height: 100vh;
+        width: 300px;
+        top:0;
+        right: ;
+        text-align: left;
+        z-index:1;
+    }
+    .nav-menu ul li{
+        display: block;
+        margin: 10px 0;
+    }
+}
